@@ -25,22 +25,24 @@
 %代码块的一些设定，原模板代码
 \renewcommand{\ttdefault}{pcr}
 \lstset{
-    frame=shadowbox,
-    numbers=left, 
-    numberstyle=\small,
-    basicstyle=\ttfamily\small,
-    breaklines=true,
-    backgroundcolor=\color{buaasilver20},
-    xleftmargin=0.8cm,
-    framexleftmargin=0em,
-    keywordstyle=\bfseries\color{buaablue},
-    stringstyle=\color{buaablue},
-    commentstyle=\color{mygreen},
-    rulesepcolor= \color{buaasilver40},
-    rulecolor=\color{buaablue},
-    deletekeywords={compile},
-    escapechar=\&,
-    escapeinside={<@}{@>}
+    frame=shadowbox, %边框样式
+    numbers=left, %行号
+    numberstyle=\small, %行号字体大小
+    basicstyle=\footnotesize\rmfamily, %代码字体大小
+    breaklines=true, %自动换行
+    backgroundcolor=\color{buaasilver20}, %背景颜色
+    xleftmargin=0cm, %代码块左侧空白
+    xrightmargin=0.3cm, %代码块右侧空白
+    framexleftmargin=-2em, %代码块左侧空白
+    numbersep=-1em, % 行号偏移量
+    keywordstyle=\bfseries\color{buaablue}, %关键字颜色
+    stringstyle=\color{buaablue}, %字符串颜色
+    commentstyle=\color{mygreen}, %注释颜色
+    rulesepcolor= \color{buaasilver40}, %代码块边框颜色
+    rulecolor=\color{buaablue}, %代码块边框颜色
+    deletekeywords={compile}, %删除关键字
+    escapechar=\&, %逃逸字符
+    escapeinside={<@}{@>}   %逃逸字符
 }
 
 %% 代码块标题设定
