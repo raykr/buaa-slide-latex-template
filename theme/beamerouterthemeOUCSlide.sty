@@ -14,7 +14,7 @@
 
 %% 首页标题背景，原模板代码
 \defbeamertemplate{background canvas}{title}{%
-    \includegraphics[width=\paperwidth, height=\paperheight]{logos/background.jpg}
+    \includegraphics[width=\paperwidth, height=\paperheight]{logos/background.png}
 }
 
 %% 首页页面顶部元素，原模板代码
@@ -35,8 +35,8 @@
 %首页顶栏logo，原模板代码
 \newcommand{\banner}{%
     \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west, xshift=0.8cm, yshift=-0.6cm] at (current page.north west) {
-            \includegraphics[scale=0.02]{logos/ouc_logo.png}
+        \node[anchor=north west, xshift=0.8cm, yshift=-0.55cm] at (current page.north west) {
+            \includegraphics[scale=0.45]{logos/buaa_logo.png}
         };
     \end{tikzpicture}
 }
@@ -59,7 +59,7 @@
 %首页右下角网址，原模板代码
 \newcommand{\oucurl}{%
     \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=south east, text=oucblue] at (current page.south east) {\tiny www.ouc.edu.cn};
+        \node[anchor=south east, text=buaablue] at (current page.south east) {\tiny www.buaa.edu.cn};
     \end{tikzpicture}
 }
 
@@ -109,8 +109,8 @@
 % 普通页面右下角Logo，原模板代码
 \newcommand{\footerlogo}{%
     \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=south east, xshift=-1.8cm, yshift=-0.1cm] at (current page.south east) {
-            \includegraphics[scale=0.008]{logos/ouc_logo_bottom.png}
+        \node[anchor=south east, xshift=-1.2cm, yshift=-0.1cm] at (current page.south east) {
+            \includegraphics[scale=0.18]{logos/buaa_logo_bottom.png}
         };
     \end{tikzpicture}
 }
@@ -123,7 +123,7 @@
 
 %% 普通页面frame背景模板，原模板代码
 \defbeamertemplate{background}{frame}{%框架
-    \bottomslider{oucblue} %底部颜色为海大蓝
+    \bottomslider{buaablue} %底部颜色为北航蓝
     \footerlogo %右下角logo
 }
 
@@ -135,26 +135,26 @@
 %普通页面标题设置
 \defbeamertemplate{frametitle}{frame}{%
     \vspace{10pt}%
-    \usebeamercolor[oucblue]{frametitle}\usebeamerfont{frametitle}
+    \usebeamercolor[buaablue]{frametitle}\usebeamerfont{frametitle}
     \thesubsection. \insertsubsection%显示二级标题
     \ifx\insertsubsubsection\empty%如果没有三级标题什么都不做        
     \else
-        \usebeamercolor[ouclightblue]{framesubtitle}\usebeamerfont{framesubtitle}
+        \usebeamercolor[skyblue]{framesubtitle}\usebeamerfont{framesubtitle}
         \thesubsubsection.\insertsubsubsection
     \fi    
     \vspace{0.5pt}%标题到下面的线之间的距离
-    {\color{oucblue}\hrule height 1.5pt depth 0pt}%标题下面的线
+    {\color{buaablue}\hrule height 1.5pt depth 0pt}%标题下面的线
 }
 
 %因为在frame中引入了section，所以要为目录页面单独设置一个frametitle的模板，去掉了section信息
 \defbeamertemplate{frametitle}{outlineframe}{
     \vspace{12pt}%
-    \usebeamercolor[oucblue]{frametitle}\usebeamerfont{frametitle}
+    \usebeamercolor[buaablue]{frametitle}\usebeamerfont{frametitle}
     \insertframetitle
-    \usebeamercolor[ouclightblue]{framesubtitle}\usebeamerfont{framesubtitle}
+    \usebeamercolor[skyblue]{framesubtitle}\usebeamerfont{framesubtitle}
     \insertframesubtitle
     \vspace{0.5pt}%标题到下面的线之间的距离
-    {\color{oucblue}\hrule height 1.5pt depth 0pt}%标题下面的线
+    {\color{buaablue}\hrule height 1.5pt depth 0pt}%标题下面的线
 }
 
 %为普通frame设置模板
@@ -217,14 +217,14 @@
     \begin{frame}%
         \begin{center} %所有文字居中
         \vspace{2.5cm}%
-        \huge\textcolor{oucred}{\textbf{\thesection.\insertsectionhead}}%
+        \huge\textcolor{chinared}{\textbf{\thesection.\insertsectionhead}}%
         \end{center}
     \end{frame}%
 }
 
 %目录样式
 \setbeamertemplate{section in toc}[sections numbered]
-\setbeamercolor{section in toc}{bg=white,fg=oucred}
+\setbeamercolor{section in toc}{bg=white,fg=chinared}
 
 %设置有代码块的frame
 \newenvironment{fragileframe}%

@@ -1,7 +1,7 @@
 %% 版本:1.0
-%% 作者：杨永全
+%% 作者：景宗雷
 %% 本文件的主要目的，是为了定义列表等内部元素的样式
-%% 完成时间：2022-05-09
+%% 完成时间：2024-07-02
 
 \RequirePackage{listings,verbatim}%引入代码包
 \RequirePackage{caption}
@@ -15,11 +15,11 @@
 
 %超链接的颜色等信息
 \hypersetup{
-    %colorlinks=true, %超链接颜色，全部使用海大红。
-    linkcolor=oucred,
-    urlcolor=oucred,
-    citecolor=oucred,
-    anchorcolor=oucred,
+    %colorlinks=true, %超链接颜色，全部使用中国红。
+    linkcolor=chinared,
+    urlcolor=chinared,
+    citecolor=chinared,
+    anchorcolor=chinared,
 }
 
 %代码块的一些设定，原模板代码
@@ -30,14 +30,14 @@
     numberstyle=\small,
     basicstyle=\ttfamily\upshape\small,
     breaklines=true,
-    backgroundcolor=\color{oucsilver10},
+    backgroundcolor=\color{buaasilver20},
     xleftmargin=0.8cm,
     framexleftmargin=0em,
-    keywordstyle=\bfseries\color{oucblue},
-    stringstyle=\color{oucblue},
+    keywordstyle=\bfseries\color{buaablue},
+    stringstyle=\color{buaablue},
     commentstyle=\color{mygreen},
-    rulesepcolor= \color{oucsilver40},
-    rulecolor=\color{oucblue},
+    rulesepcolor= \color{buaasilver40},
+    rulecolor=\color{buaablue},
     deletekeywords={compile},
     escapechar=\&,
     escapeinside={<@}{@>}
@@ -73,11 +73,11 @@
     boxrule=.5pt,%边框
     left=5pt, right=5pt, top=0pt, bottom=0pt,%文字边距
     boxsep=5pt,
-    colframe=oucblue,
-    colback=oucblue10,
-    colbacktitle=oucblue10,
-    coltext=oucblue,
-    title={\textcolor{oucblue}{\faStickyNoteO\hspace{.5em}\bfseries{\textbf{#1}}}},
+    colframe=buaablue,
+    colback=buaablue20,
+    colbacktitle=buaablue20,
+    coltext=buaablue,
+    title={\textcolor{buaablue}{\faStickyNoteO\hspace{.5em}\bfseries{\textbf{#1}}}},
     halign=left,
 }
 %设置重要提示框
@@ -88,11 +88,11 @@
     boxrule=.5pt,
     left=5pt, right=5pt, top=0pt, bottom=0pt,
     boxsep=5pt,
-    colframe=oucred,
-    colback=oucred10,
-    colbacktitle=oucred10,
-    coltext=oucred,
-    title={\textcolor{oucred}{\faExclamationCircle\hspace{.5em}\bfseries{\textbf{#1}}}},
+    colframe=chinared,
+    colback=chinared20,
+    colbacktitle=chinared20,
+    coltext=chinared,
+    title={\textcolor{chinared}{\faExclamationCircle\hspace{.5em}\bfseries{\textbf{#1}}}},
     halign=left,
 }
 %列表框
