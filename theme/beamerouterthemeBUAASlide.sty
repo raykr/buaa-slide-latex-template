@@ -35,8 +35,8 @@
 %首页顶栏logo，原模板代码
 \newcommand{\banner}{%
     \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=north west, xshift=0.8cm, yshift=-0.55cm] at (current page.north west) {
-            \includegraphics[scale=0.45]{logos/buaa_logo.png}
+        \node[anchor=north west, xshift=0.6cm, yshift=-0.3cm] at (current page.north west) {
+            \includegraphics[scale=0.5]{logos/buaa_logo.png}
         };
     \end{tikzpicture}
 }
@@ -59,7 +59,7 @@
 %首页右下角网址，原模板代码
 \newcommand{\oucurl}{%
     \begin{tikzpicture}[overlay, remember picture]
-        \node[anchor=south east, text=buaablue] at (current page.south east) {\tiny www.buaa.edu.cn};
+        \node[anchor=south east, text=buaablue, xshift=-0.2cm, yshift=0.03cm] at (current page.south east) {\tiny www.buaa.edu.cn};
     \end{tikzpicture}
 }
 
